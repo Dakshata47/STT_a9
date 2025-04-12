@@ -1,10 +1,12 @@
 metadata:
-  name: cancer-dataset-jovyan
+  created: '2025-04-12T07:26:11.967000'
+  name: cancer-dataset-jovyan-jovyan
+status:
+  state: online
+kind: project
 spec:
-  origin_url: git://github.com/Dakshata47/STT_a9.git#refs/heads/main
-  desired_state: online
   source: git://github.com/Dakshata47/STT_a9.git#refs/heads/main
-  conda: ''
+  origin_url: git://github.com/Dakshata47/STT_a9.git#refs/heads/main
   functions:
   - url: data_prep.py
     name: data-prep
@@ -19,4 +21,5 @@ spec:
     name: serving
     kind: serving
     image: mlrun/mlrun
-kind: project
+  desired_state: online
+  conda: ''
